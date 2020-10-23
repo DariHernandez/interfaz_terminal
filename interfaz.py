@@ -167,20 +167,21 @@ class Interfaz ():
                         print ('Incorrect lenght. The credential needs at least %s characters' % int (validation))
                 except: 
                     # Convert validation items to list
-                    if type (validation) != list:
-                        validation = [validation] 
+                    if validation: 
+                        if type (validation) != list:
+                            validation = [validation] 
 
-                    # Count correct validations
-                    validationCounter = 0                
-                    for validationItem in validation: 
-                        if validationItem in credential: 
-                            validationCounter += 1
-                        else: 
-                            print ('The credential needs to have "%s"' % validationItem)
-                    
-                    # Check number of validations
-                    if validationCounter == len (validation): 
-                        break
+                        # Count correct validations
+                        validationCounter = 0                
+                        for validationItem in validation: 
+                            if validationItem in credential: 
+                                validationCounter += 1
+                            else: 
+                                print ('The credential needs to have "%s"' % validationItem)
+                        
+                        # Check number of validations
+                        if validationCounter == len (validation): 
+                            break
 
             credentials [configCredential['name']] = credential
 
