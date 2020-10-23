@@ -168,6 +168,8 @@ class Interfaz ():
                 except: 
                     # Convert validation items to list
                     if validation: 
+                        # Convert validation info to python data
+                        validation = json.loads (validation)
                         if type (validation) != list:
                             validation = [validation] 
 
@@ -182,6 +184,8 @@ class Interfaz ():
                         # Check number of validations
                         if validationCounter == len (validation): 
                             break
+                    else: 
+                        break
 
             credentials [configCredential['name']] = credential
 
