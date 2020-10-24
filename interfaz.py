@@ -16,8 +16,7 @@ class Interfaz ():
 
 
         # Menssages
-        helpMenssage = "Run the interfaz.py to request credentials or configuration of credentials. \
-        \n interfaz.py return the current credentials.\
+        helpMenssage = "Run the to request credentials or configuration of credentials if it doesn't exist. \
         \n write '-l --cred' to see all credentials \
         \n write '-l --config' to see all credentials configuration options. \
         \n write '-e --config' to edit all credentials configuration options. \
