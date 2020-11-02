@@ -1,19 +1,19 @@
 # interfaz_terminal
 # Description
-This project is a basic interfaz by terminal, for incorpore in other python projects. 
-The program, request 'rules' and after ask to the user specific credentials for each rule (for example user name, password, email...)
-You need to specify the path where the 'rules' (configurations of credentials) and credentials json files, will be. 
+This project is a basic **interfaz by terminal**, for incorpore in **other python projects.** 
+The program, **request 'rules'** and after ask to the **user specific credentials for each rule** (for example user name, password, email...)
+You need to specify **the path where** the 'rules' (**configurations of credentials**) **and credentials** json files, **will be**. 
 # Functions
 ## printCredentials ()
-Print by terminal all credentials inside credentials json file. 
+**Print** by terminal **all credentials** inside credentials json file. 
 ## printConfigCredentials ()
-Print by terminal the rules/the configuration of the credentials inside the configuration file.
+**Print** by terminal the rules/the **configuration of the credentials** inside the configuration file.
 ## requestCredentials ()
-Ask to the user by terminal, for each credential from the configuration file. 
+**Ask to the user** by terminal, **for each credential** from the configuration file. 
 ## requestConfigCredentials ()
-Ask to the user by terminal, for configuration of each credential: name, description, and validation.
+**Ask to the user** by terminal, **for configuration of each credential:** name, description, and validation.
 ## getCredentials ()
-Return a dictionary with the credentials information. 
+**Return** a dictionary with the **credentials information.**
 
 # How to use
 
